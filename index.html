@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tridhatri Sontena</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fdf8f0;
+      color: #2c2c2c;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 80px 24px 60px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      font-weight: normal;
+      letter-spacing: 0.01em;
+      margin-bottom: 6px;
+    }
+
+    .designation {
+      font-size: 0.95rem;
+      color: #6b6b6b;
+      margin-bottom: 56px;
+    }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    .section-title {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #999;
+      margin-bottom: 14px;
+    }
+
+    .section-body {
+      font-size: 0.95rem;
+      color: #3a3a3a;
+    }
+
+    .project-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .project-list li {
+      margin-bottom: 16px;
+    }
+
+    .project-list a {
+      color: #2c2c2c;
+      text-decoration: none;
+      border-bottom: 1px solid #c8b89a;
+    }
+
+    .project-list a:hover {
+      border-bottom-color: #2c2c2c;
+    }
+
+    .project-desc {
+      font-size: 0.85rem;
+      color: #7a7a7a;
+      margin-top: 2px;
+    }
+
+    .current-work {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #5a5a5a;
+      font-style: italic;
+    }
+
+    .writing-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .writing-list li {
+      margin-bottom: 10px;
+    }
+
+    .writing-list a {
+      color: #2c2c2c;
+      text-decoration: none;
+      border-bottom: 1px solid #c8b89a;
+    }
+
+    .writing-list a:hover {
+      border-bottom-color: #2c2c2c;
+    }
+
+    .more-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .more-links li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    .more-links a {
+      color: #2c2c2c;
+      text-decoration: none;
+      font-size: 0.95rem;
+      border-bottom: 1px solid #c8b89a;
+    }
+
+    .more-links a:hover {
+      border-bottom-color: #2c2c2c;
+    }
+
+    .email-link {
+      display: block;
+      margin-top: 14px;
+      font-size: 0.88rem;
+      color: #7a7a7a;
+    }
+
+    .email-link a {
+      color: #7a7a7a;
+      text-decoration: none;
+      border-bottom: 1px dotted #c8b89a;
+    }
+
+    .email-link a:hover {
+      color: #2c2c2c;
+      border-bottom-color: #2c2c2c;
+    }
+
+    footer {
+      margin-top: 64px;
+      font-size: 0.78rem;
+      color: #bbb;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e8ddd0;
+      margin: 48px auto;
+      width: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <h1>Tridhatri Sontena</h1>
+    <p class="designation">Software Developer</p>
+
+    <!-- About -->
+    <section>
+      <p class="section-title">About</p>
+      <p class="section-body">
+        I work at Intel as a GPU Windows Driver Debug Engineer.<br /><br />
+        I am building an Agentic AI system for identifying issues with the Intel
+        Driver — parsing various driver logs related to Display, Stress, Power
+        and Thermal, Media, and more.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- Projects -->
+    <section>
+      <p class="section-title">Projects</p>
+      <ul class="project-list">
+        <li>
+          <a href="https://github.com/Tridhatri/Kernel_Project" target="_blank" rel="noopener">
+            Minimal OS Kernel
+          </a>
+          <p class="project-desc">
+            A bootable kernel with memory management, process scheduling, and
+            system calls in under 1000 lines of C and Assembly.
+          </p>
+        </li>
+        <li>
+          <a href="https://github.com/Tridhatri/TCP-Student-Database-in-C" target="_blank" rel="noopener">
+            TCP Student Database
+          </a>
+          <p class="project-desc">
+            Student database system in C with a TCP concurrent server using
+            processes for multi-client interactions.
+          </p>
+        </li>
+        <li>
+          <a href="https://github.com/Tridhatri/Automating-Basketball-Referee" target="_blank" rel="noopener">
+            AI Basketball Referee
+          </a>
+          <p class="project-desc">
+            Computer vision system for automated travel and double-dribble
+            detection in basketball.
+          </p>
+        </li>
+      </ul>
+      <p class="current-work">
+        Currently working on: building Go-style routines and a custom runtime
+        scheduler in pure C from scratch.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- Writing -->
+    <section>
+      <p class="section-title">Writing</p>
+      <ul class="writing-list">
+        <li>
+          <a href="https://tridhatrisontena.substack.com" target="_blank" rel="noopener">
+            Vim and Life — Part 1
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <!-- More -->
+    <section>
+      <p class="section-title">More</p>
+      <ul class="more-links">
+        <li>
+          <a href="https://twitter.com/tridhatri" target="_blank" rel="noopener">Twitter</a>
+        </li>
+        <li>
+          <a href="https://github.com/Tridhatri" target="_blank" rel="noopener">GitHub</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/tridhatri-sontena-484934224" target="_blank" rel="noopener">LinkedIn</a>
+        </li>
+      </ul>
+      <p style="margin-top: 10px; font-size: 0.82rem; color: #999;">
+        See more of my code on
+        <a href="https://github.com/Tridhatri" target="_blank" rel="noopener"
+           style="color: #999; border-bottom: 1px dotted #c8b89a; text-decoration: none;">GitHub</a>.
+      </p>
+      <p class="email-link">
+        <a href="mailto:tridhatri.sontena@gmail.com">tridhatri.sontena@gmail.com</a>
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      Last updated on: April 2026
+    </footer>
+
+  </div>
+</body>
+</html>
