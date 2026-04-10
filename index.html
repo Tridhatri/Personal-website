@@ -149,21 +149,36 @@
       color: #2c2c2c;
     }
 
-    .email-link {
-      display: block;
-      margin-top: 14px;
+    .contact-table {
+      border-collapse: collapse;
+      margin: 0 auto;
       font-size: 0.88rem;
-      color: #7a7a7a;
     }
 
-    .email-link a {
-      color: #7a7a7a;
+    .contact-table tr + tr td {
+      padding-top: 8px;
+    }
+
+    .contact-label {
+      color: #999;
+      text-align: right;
+      padding-right: 16px;
+      white-space: nowrap;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      vertical-align: middle;
+    }
+
+    .contact-value {
+      color: #3a3a3a;
       text-decoration: none;
       border-bottom: 1px dotted #c8b89a;
+      vertical-align: middle;
     }
 
-    .email-link a:hover {
-      color: #2c2c2c;
+    a.contact-value:hover {
+      color: #1a1a1a;
       border-bottom-color: #2c2c2c;
     }
 
@@ -255,9 +270,9 @@
 
     <hr />
 
-    <!-- More -->
+    <!-- Connect -->
     <section>
-      <p class="section-title">More</p>
+      <p class="section-title">Connect</p>
       <ul class="more-links">
         <li>
           <a href="https://twitter.com/tridhatri" target="_blank" rel="noopener">
@@ -280,20 +295,27 @@
           </a>
         </li>
       </ul>
-      <p style="margin-top: 10px; font-size: 0.82rem; color: #999;">
-        See more of my code on
-        <a href="https://github.com/Tridhatri" target="_blank" rel="noopener"
-           style="color: #999; border-bottom: 1px dotted #c8b89a; text-decoration: none;">GitHub</a>.
-      </p>
-      <p class="email-link">
-        <a id="email-link"></a>
-      </p>
-      <p style="margin-top: 6px; font-size: 0.82rem; color: #999;">
-        <a href="tel:+917337337537" style="color: #7a7a7a; text-decoration: none; border-bottom: 1px dotted #c8b89a;">+91 73373 37537</a>
-      </p>
-      <p style="margin-top: 6px; font-size: 0.82rem; color: #999;">
-        Bangalore, India
-      </p>
+    </section>
+
+    <hr />
+
+    <!-- Contact -->
+    <section>
+      <p class="section-title">Contact</p>
+      <table class="contact-table">
+        <tr>
+          <td class="contact-label">Email</td>
+          <td><a id="email-link" class="contact-value"></a></td>
+        </tr>
+        <tr>
+          <td class="contact-label">Phone</td>
+          <td><a href="tel:+917337337537" class="contact-value">+91 73373 37537</a></td>
+        </tr>
+        <tr>
+          <td class="contact-label">Location</td>
+          <td class="contact-value">Bangalore, India</td>
+        </tr>
+      </table>
       <script>
         (function() {
           var u = 'tridhatri.sontena', d = 'gmail.com';
