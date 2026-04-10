@@ -84,10 +84,38 @@
     }
 
     .current-work {
-      margin-top: 20px;
-      font-size: 0.9rem;
+      margin-top: 24px;
+      padding-top: 18px;
+      border-top: 1px solid #e8ddd0;
+    }
+
+    .current-work-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #999;
+      margin-bottom: 10px;
+    }
+
+    .current-work ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .current-work li {
+      font-size: 0.88rem;
       color: #5a5a5a;
-      font-style: italic;
+      padding: 4px 0;
+      padding-left: 14px;
+      position: relative;
+    }
+
+    .current-work li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #c8b89a;
     }
 
     .writing-list {
@@ -248,10 +276,13 @@
           </p>
         </li>
       </ul>
-      <p class="current-work">
-        Currently working on: building Go-style routines and a custom runtime
-        scheduler in pure C from scratch.
-      </p>
+      <div class="current-work">
+        <p class="current-work-label">Currently building</p>
+        <ul>
+          <li>Go-style routines and a custom runtime scheduler in pure C</li>
+          <li>A custom text editor in C with Vim motions, from scratch</li>
+        </ul>
+      </div>
     </section>
 
     <hr />
