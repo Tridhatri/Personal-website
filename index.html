@@ -286,8 +286,16 @@
            style="color: #999; border-bottom: 1px dotted #c8b89a; text-decoration: none;">GitHub</a>.
       </p>
       <p class="email-link">
-        <a href="mailto:tridhatri.sontena@gmail.com">tridhatri.sontena@gmail.com</a>
+        <a id="email-link"></a>
       </p>
+      <script>
+        (function() {
+          var u = 'tridhatri.sontena', d = 'gmail.com';
+          var a = document.getElementById('email-link');
+          a.href = 'mailto:' + u + '@' + d;
+          a.textContent = u + '@' + d;
+        })();
+      </script>
     </section>
 
     <!-- Footer -->
