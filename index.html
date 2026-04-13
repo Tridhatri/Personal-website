@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tridhatri Sontena</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%232c2c2c'/%3E%3Ctext x='50' y='66' font-family='Georgia%2C serif' font-size='34' fill='%23c8b89a' text-anchor='middle' font-weight='bold'%3E3the3%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
   <style>
     * {
@@ -18,83 +21,140 @@
       color: #2c2c2c;
       font-family: Georgia, "Times New Roman", serif;
       font-size: 16px;
-      line-height: 1.7;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
     }
 
     .container {
-      max-width: 640px;
+      max-width: 660px;
       margin: 0 auto;
-      padding: 80px 24px 60px;
+      padding: 72px 32px 80px;
       text-align: center;
     }
 
+    /* ── Avatar ── */
+    .avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #2c2c2c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 22px;
+    }
+
+    .avatar span {
+      font-family: Georgia, serif;
+      font-size: 1rem;
+      color: #c8b89a;
+      font-weight: bold;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Header ── */
     h1 {
-      font-size: 1.9rem;
+      font-size: 1.95rem;
       font-weight: normal;
       letter-spacing: 0.01em;
       margin-bottom: 6px;
     }
 
     .designation {
-      font-size: 0.95rem;
-      color: #6b6b6b;
-      margin-bottom: 56px;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.82rem;
+      color: #9a9a9a;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 64px;
     }
 
+    /* ── Sections ── */
     section {
-      margin-bottom: 48px;
+      margin-bottom: 0;
     }
 
     .section-title {
-      font-size: 0.75rem;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.68rem;
       text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: #999;
-      margin-bottom: 14px;
+      letter-spacing: 0.14em;
+      color: #b8b0a4;
+      margin-bottom: 18px;
     }
 
     .section-body {
       font-size: 0.95rem;
       color: #3a3a3a;
+      line-height: 1.85;
     }
 
+    hr {
+      border: none;
+      border-top: 1px solid #ede5d8;
+      margin: 52px auto;
+      width: 32px;
+    }
+
+    /* ── Projects ── */
     .project-list {
       list-style: none;
       padding: 0;
+      text-align: left;
     }
 
     .project-list li {
-      margin-bottom: 16px;
+      padding: 16px 20px;
+      border: 1px solid #ede5d8;
+      border-radius: 8px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .project-list li + li {
+      margin-top: 10px;
+    }
+
+    .project-list li:hover {
+      border-color: #c8b89a;
+      box-shadow: 0 2px 14px rgba(200, 184, 154, 0.18);
     }
 
     .project-list a {
       color: #2c2c2c;
       text-decoration: none;
-      border-bottom: 1px solid #c8b89a;
+      font-size: 0.95rem;
+      display: block;
+      margin-bottom: 5px;
+      transition: color 0.2s;
     }
 
     .project-list a:hover {
-      border-bottom-color: #2c2c2c;
+      color: #1a1a1a;
     }
 
     .project-desc {
-      font-size: 0.85rem;
-      color: #7a7a7a;
-      margin-top: 2px;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.81rem;
+      color: #8a8a8a;
+      line-height: 1.65;
     }
 
+    /* ── Currently building ── */
     .current-work {
-      margin-top: 24px;
-      padding-top: 18px;
-      border-top: 1px solid #e8ddd0;
+      margin-top: 14px;
+      padding: 14px 20px;
+      border: 1px dashed #ddd5c4;
+      border-radius: 8px;
+      text-align: left;
     }
 
     .current-work-label {
-      font-size: 0.72rem;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.68rem;
       text-transform: uppercase;
       letter-spacing: 0.12em;
-      color: #999;
-      margin-bottom: 10px;
+      color: #b8b0a4;
+      margin-bottom: 9px;
     }
 
     .current-work ul {
@@ -104,10 +164,10 @@
     }
 
     .current-work li {
-      font-size: 0.88rem;
-      color: #5a5a5a;
-      padding: 4px 0;
-      padding-left: 14px;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.83rem;
+      color: #6a6a6a;
+      padding: 3px 0 3px 18px;
       position: relative;
     }
 
@@ -118,6 +178,7 @@
       color: #c8b89a;
     }
 
+    /* ── Writing ── */
     .writing-list {
       list-style: none;
       padding: 0;
@@ -130,79 +191,97 @@
     .writing-list a {
       color: #2c2c2c;
       text-decoration: none;
+      font-size: 0.95rem;
       border-bottom: 1px solid #c8b89a;
+      padding-bottom: 1px;
+      transition: color 0.2s, border-bottom-color 0.2s;
     }
 
     .writing-list a:hover {
+      color: #1a1a1a;
       border-bottom-color: #2c2c2c;
     }
 
+    /* ── Connect ── */
     .more-links {
       list-style: none;
       padding: 0;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px 6px;
-    }
-
-    .more-links li {
-      display: inline-block;
+      gap: 8px;
     }
 
     .more-links a {
       display: inline-flex;
       align-items: center;
-      gap: 7px;
-      color: #2c2c2c;
+      gap: 8px;
+      color: #4a4a4a;
       text-decoration: none;
-      font-size: 0.92rem;
-      padding: 6px 14px;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.86rem;
+      padding: 8px 16px;
       border: 1px solid #e0d4c0;
-      border-radius: 4px;
-      transition: border-color 0.2s, color 0.2s;
+      border-radius: 6px;
+      background: #fff;
+      transition: border-color 0.2s, color 0.2s, box-shadow 0.2s;
     }
 
     .more-links a:hover {
       border-color: #c8b89a;
       color: #1a1a1a;
+      box-shadow: 0 2px 10px rgba(200, 184, 154, 0.2);
     }
 
     .more-links a i {
-      font-size: 1rem;
-      color: #7a7a7a;
+      font-size: 0.95rem;
+      color: #8a8a8a;
+      transition: color 0.2s;
     }
 
     .more-links a:hover i {
       color: #2c2c2c;
     }
 
+    .more-links a svg {
+      color: #8a8a8a;
+      transition: color 0.2s;
+    }
+
+    .more-links a:hover svg {
+      color: #2c2c2c;
+    }
+
+    /* ── Contact ── */
     .contact-table {
       border-collapse: collapse;
       margin: 0 auto;
-      font-size: 0.88rem;
     }
 
     .contact-table tr + tr td {
-      padding-top: 8px;
+      padding-top: 11px;
     }
 
     .contact-label {
-      color: #999;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: #b8b0a4;
       text-align: right;
-      padding-right: 16px;
+      padding-right: 20px;
       white-space: nowrap;
-      font-size: 0.75rem;
+      font-size: 0.68rem;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
       vertical-align: middle;
     }
 
     .contact-value {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.88rem;
       color: #3a3a3a;
       text-decoration: none;
       border-bottom: 1px dotted #c8b89a;
       vertical-align: middle;
+      transition: color 0.2s, border-bottom-color 0.2s;
     }
 
     a.contact-value:hover {
@@ -210,17 +289,45 @@
       border-bottom-color: #2c2c2c;
     }
 
+    /* ── Footer ── */
     footer {
-      margin-top: 64px;
-      font-size: 0.78rem;
-      color: #bbb;
+      margin-top: 80px;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.74rem;
+      color: #c4bbb0;
+      letter-spacing: 0.03em;
     }
 
-    hr {
-      border: none;
-      border-top: 1px solid #e8ddd0;
-      margin: 48px auto;
-      width: 40px;
+    /* ── Mobile ── */
+    @media (max-width: 480px) {
+      .container {
+        padding: 48px 20px 60px;
+      }
+
+      h1 {
+        font-size: 1.65rem;
+      }
+
+      .designation {
+        margin-bottom: 48px;
+      }
+
+      .project-list li {
+        padding: 14px 16px;
+      }
+
+      .current-work {
+        padding: 13px 16px;
+      }
+
+      .more-links a {
+        padding: 8px 13px;
+        font-size: 0.83rem;
+      }
+
+      .contact-label {
+        padding-right: 14px;
+      }
     }
   </style>
 </head>
@@ -228,6 +335,7 @@
   <div class="container">
 
     <!-- Header -->
+    <div class="avatar"><span>T</span></div>
     <h1>Tridhatri Sontena</h1>
     <p class="designation">Software Developer</p>
 
