@@ -1,0 +1,166 @@
+
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,10pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\RequirePackage{fontawesome}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% -------- Margins (tightened only) --------
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.45in}
+
+\urlstyle{rm}
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% -------- Global spacing compression --------
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\itemsep}{1pt}
+\setlength{\topsep}{1pt}
+
+% -------- Section formatting --------
+\titleformat{\section}{
+  \vspace{-12pt}\scshape\raggedright\large
+}{}{0em}{}[\titlerule \vspace{-8pt}]
+
+% -------- Commands --------
+\newcommand{\resumeItem}[2]{
+  \item\small{\textbf{#1}: #2}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\topsep}{1pt}
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+
+%-----------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Tridhatri Sontena}} & \\
+
+  \faEnvelope\ \href{mailto:tridhatri.sontena@gmail.com}{tridhatri.sontena@gmail.com} &
+  \faGithub\ \href{https://github.com/Tridhatri}{github.com/Tridhatri} \\
+
+  \faEnvelope\ \href{mailto:tridhatri.sontena@intel.com}{tridhatri.sontena@intel.com} &
+  \faLinkedin\ \href{https://www.linkedin.com/in/tridhatri-sontena-484934224}{linkedin.com/in/tridhatri-sontena} \\
+
+  \faPhone\ +91-7337337537 &
+  \faGlobe\ \href{https://tridhatri.vercel.app}{tridhatri.vercel.app} \\
+\end{tabular*}
+
+
+%-----------SKILLS-----------
+\section{Skills Summary}
+\resumeSubHeadingListStart
+\resumeItem{Programming Languages}{Python, C/C++, Lua, SQL, Vim Script, Java, JavaScript, Bash, PowerShell, typst}
+\resumeItem{Systems \& Debugging}{Windows Performance Analyzer (WPA), GPUView, WinDbg, WPT, GPU Debugging, Graphics IP, Display Debugging, ETL Analysis, Performance Analysis, Log Analysis}
+\resumeItem{Tools}{Git, GitHub, NeoVim, Vim, tmux, kitty, LaTeX}
+\resumeItem{Platforms}{Linux (Arch, Ubuntu, Debian), Unix, Windows, macOS}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading{Intel Corporation}{On-site}
+{GPU SDE Debugger Intern}{July 2025 -- Present}
+\resumeItemListStart
+
+\resumeItem{Agentic AI Debug App}
+{Architected and built an end-to-end Agentic AI command-line application to automate GPU driver defect analysis, reducing manual triage time from 10--20 minutes to an average of 2.7 minutes (87\% improvement). Interfaced with internal defect-tracking REST APIs to pull live issue metadata, attachments, and engineer comments as structured LLM context.
+
+\vspace{2pt}
+Designed a 6-phase multi-agent pipeline: (1) automated data ingestion and log classification (ETL, GOP, crash-dump, burnin, performance traces), (2) interactive attachment selection with a user-driven per-item analysis loop, (3) LLM-orchestrated per-category analysis using specialized agent tools and skills, (4) RAG-powered triage checklist compliance and best-known methodology retrieval from internal knowledge bases, (5) structured JSON report generation via a dedicated agent tool, and (6) rendered HTML report artifact with a plaintext terminal summary. Built 19 tool integrations and agent skills spanning 20 defect categories (Display, Media, BSOD, TDR, Gaming, AI/ML, etc.). Orchestrated two external AI analysis pipelines via subprocess with dynamic prompt construction derived from defect context. Applied multithreading, content-hash caching, and context-window compression to minimize LLM token overhead. Built a custom QA evaluation framework for continuous accuracy measurement.\\
+\textbf{Stack: Python, Enterprise LLMs, Agentic AI, RAG, LLM Tool-Use, Multi-Agent Systems, ETL, WPA, WinDbg, GPUView, WPT, Roff, HTML/CSS, JSON, REST APIs}
+}
+
+\resumeItem{Graphics Driver Debug Core Work}
+{Debugging low-level Graphics IP issues with a focus on display technologies and OS-Graphics Driver-External Device interactions. Involved in identifying, analyzing, and resolving Graphics Driver and GOP driver faults to improve stability and correctness.}
+
+\resumeItemListEnd
+
+\resumeSubheading{C.R. Rao Advanced Institute of Mathematics, Statistics and Computer Science}{On-site}
+{Research Intern (Part-time)}{May 2024 -- August 2024}
+\resumeItemListStart
+\resumeItem{Limited Dataset Analysis}
+{Conducted research on cybersecurity datasets under limited-data constraints, focusing on anomaly detection and improving data quality and balance using synthetic data generation and limited dataset analysis techniques to enable effective machine learning.}
+\resumeItemListEnd
+
+\resumeSubheading{Kellton Tech}{On-site}
+{Student Developer (Part-time)}{May 2023 -- July 2023}
+\resumeItemListStart
+\resumeItem{Domain-Specific Chatbot}
+{Built a custom domain-specific chatbot using OpenAI APIs with Python and Jupyter Notebooks; performed internal payroll data analysis and generated automated summaries and insights.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of Hyderabad}{Hyderabad, India}
+{Integrated Master of Technology (I.M.Tech) -- Computer Science}{Nov 2021 -- May 2026 (Expected)}
+\resumeItemListStart
+\resumeItem{Relevant Coursework}{Operating Systems, Unix Network Programming, Machine Learning, Neural Networks, Algorithms, Virtualization, DBMS, Computer Organisation and Architecture, Internet Technologies, Essentials of AI}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Academic Projects}
+\resumeSubHeadingListStart
+
+\resumeItem{Minimal Operating System -- 1000-Line Kernel}
+{Built a bootable RISC-V kernel in C and Assembly featuring physical and virtual memory management, process scheduling, system calls, and paging. Implemented trap handling and context switching using OpenSBI, and validated kernel functionality using QEMU-based emulation. \\
+\textbf{Link:} \href{https://github.com/Tridhatri/Kernel_Project}{github.com/Tridhatri/RISC\_V-OS}}
+
+\resumeItem{Computer Vision Referee Assistant (HoopsEye)}
+{Developed an automated basketball foul and ball detection system using YOLOv8 and OpenCV, integrated with a Flask backend for real-time inference and event visualization. Designed the pipeline for frame preprocessing, object detection, and inference optimization to assist referees during live gameplay. \\
+\textbf{Link:} \href{https://github.com/Tridhatri/Automating-Basketball-Referee}{github.com/Tridhatri/Automating-Basketball-Referee}}
+
+\resumeItem{Corotu -- Coroutine Runtime with Priority \& EDF Scheduling}
+{Built a Go-inspired coroutine runtime in C addressing Go's lack of task prioritization. Implemented M:N cooperative scheduling with 8-level priority queues and EDF (Earliest Deadline First) scheduling -- provably optimal for meeting task deadlines. Features custom ARM64 assembly context switching (replacing broken \texttt{ucontext} on macOS), per-coroutine \texttt{mmap}'d stacks with guard-page overflow protection, and work-stealing across OS threads. Benchmarked against Go goroutines, libco, and libmill on context switch throughput and deadline miss rate. \\
+\textbf{Stack: C, ARM64 Assembly, pthreads, mmap} \\
+\textbf{Link:} \href{https://github.com/Tridhatri/corotu}{github.com/Tridhatri/corotu}}
+
+\resumeItem{TCP Concurrent Student Database}
+{Implemented a multi-client TCP concurrent server in C using processes and sockets to manage student and course records. Designed streamlined request/response protocols, ensured synchronization across clients, and handled concurrent read/write operations as part of Unix Network Programming coursework. \\
+\textbf{Link:} \href{https://github.com/Tridhatri/TCP-Student-Database-in-C}{github.com/Tridhatri/TCP-Student-Database-in-C}}
+
+\resumeSubHeadingListEnd
+
+\end{document}
