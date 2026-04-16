@@ -320,6 +320,59 @@
       border-bottom-color: var(--accent-hover);
     }
 
+    /* ── Personal Notes ── */
+    .notes-list {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    .note-item {
+      padding: 14px 18px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      transition: border-color 0.2s;
+    }
+
+    .note-item + .note-item {
+      margin-top: 10px;
+    }
+
+    .note-item:hover {
+      border-color: var(--accent);
+    }
+
+    .note-category {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .note-text {
+      font-size: 0.93rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 10px;
+    }
+
+    .note-meta {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.72rem;
+      color: var(--text-faint);
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .note-meta span::before {
+      content: '·';
+      margin-right: 6px;
+      color: var(--accent);
+    }
+
     /* ── Footer ── */
     footer {
       margin-top: 80px;
@@ -434,6 +487,23 @@
           <a href="https://tridhatrisontena.substack.com" target="_blank" rel="noopener">
             Vim and Life — Part 1
           </a>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <!-- Personal Notes -->
+    <section>
+      <p class="section-title">Personal Notes</p>
+      <ul class="notes-list">
+        <li class="note-item">
+          <p class="note-category">Fitness</p>
+          <p class="note-text">I will be in shape in 2 months.</p>
+          <div class="note-meta">
+            <span>Written: April 17, 2026</span>
+            <span>Deadline: June 17, 2026</span>
+          </div>
         </li>
       </ul>
     </section>
