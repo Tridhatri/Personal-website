@@ -320,6 +320,69 @@
       border-bottom-color: var(--accent-hover);
     }
 
+    /* ── Streams ── */
+    .streams-list {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    .stream-item {
+      padding: 14px 18px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .stream-item + .stream-item {
+      margin-top: 10px;
+    }
+
+    .stream-item:hover {
+      border-color: var(--accent);
+      box-shadow: 0 2px 14px var(--shadow);
+    }
+
+    .stream-title {
+      font-size: 0.95rem;
+      color: var(--text);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+      transition: color 0.2s;
+    }
+
+    .stream-item:hover .stream-title {
+      color: var(--accent);
+    }
+
+    .stream-badge {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    .stream-link {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.72rem;
+      color: var(--text-faint);
+    }
+
+    .stream-link a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      transition: border-bottom-color 0.2s;
+    }
+
+    .stream-link a:hover {
+      border-bottom-color: var(--accent);
+    }
+
     /* ── Footer ── */
     footer {
       margin-top: 80px;
@@ -434,6 +497,22 @@
           <a href="https://tridhatrisontena.substack.com" target="_blank" rel="noopener">
             Vim and Life — Part 1
           </a>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <!-- Streams -->
+    <section>
+      <p class="section-title">Streams</p>
+      <ul class="streams-list">
+        <li class="stream-item">
+          <p class="stream-badge">Featured</p>
+          <p class="stream-title">Building RAG in pure C</p>
+          <p class="stream-link">
+            Watch on <a href="https://www.youtube.com/@3e8labs/streams/" target="_blank" rel="noopener">YouTube</a>
+          </p>
         </li>
       </ul>
     </section>
